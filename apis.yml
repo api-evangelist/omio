@@ -1,8 +1,25 @@
 aid: omio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/omio.png
 name: omio
-description: omio is a company surfaced as a portfolio company of balderton-capital, battery-ventures,
-  bond-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead
-  awaiting the enrichment pipeline.
+description: Omio (formerly GoEuro) is a Berlin-based travel booking platform that lets travelers
+  search, compare, and book trains, buses, ferries, and flights across thousands of transport
+  providers throughout Europe and beyond from a single website and mobile app. Founded in 2013 as
+  GoEuro and rebranded to Omio in 2019, the company aggregates schedules, fares, and seat
+  availability from hundreds of carriers into one checkout. Omio does not publish a public developer
+  API or developer portal; its carrier and distribution integrations are handled through private
+  B2B partnerships. This profile was added to the API Evangelist network from VC-portfolio discovery
+  and enriched by probing Omio's public domain, DNS, and security surface.
 url: https://raw.githubusercontent.com/api-evangelist/omio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Travel
+- Transportation
+- Booking
+- Mobility
+- Trains
+- Aggregator
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +50,12 @@ maintainers:
 common:
 - type: Website
   url: https://www.omio.co.uk/
+- type: Support
+  url: https://help.omio.com/
+- type: DomainSecurity
+  url: security/omio-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
